@@ -9,6 +9,6 @@ include_directories(${catkin_INCLUDE_DIRS})
 install(DIRECTORY launch DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
   PATTERN "setup_assistant.launch" EXCLUDE)
 
-catkin_install_python(PROGRAMS scripts/detector.py
+catkin_install_python(PROGRAMS scripts/moveit_controller.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
