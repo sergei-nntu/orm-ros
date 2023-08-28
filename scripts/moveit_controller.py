@@ -20,16 +20,17 @@ def detect_tf(data):
 
         pose_goal = geometry_msgs.msg.Pose()
 
+        scale = 0.3
         pose_goal.orientation.w = 1.0
-        pose_goal.position.x = round(trans.x / 3, 6)
-        pose_goal.position.y = round(trans.z / 3, 6)
-        pose_goal.position.z = round(trans.y / 3, 6)
+        pose_goal.position.x = round(trans.x / 3, 8)
+        pose_goal.position.y = round(trans.z / 3, 8)
+        pose_goal.position.z = abs(round(trans.y / 3, 8)) + scale
 
         print(pose_goal.position)
 
         group.set_pose_target(pose_goal)
 
-        success = group.go()
+        success = group.go(wait=True)
         print("Does it work?", success)
 
         group.clear_pose_targets()
