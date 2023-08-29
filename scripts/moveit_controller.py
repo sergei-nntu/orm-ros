@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 import sys
 import rospy
+import time
 import moveit_commander
-import copy
 from moveit_msgs.msg import DisplayTrajectory, PlanningScene
 import geometry_msgs.msg
 from fiducial_msgs.msg import FiducialTransformArray
@@ -11,7 +11,11 @@ from moveit_commander import MoveGroupCommander
 moveit_commander.roscpp_initialize(sys.argv)
 group = MoveGroupCommander("arm")
 
+group.set_max_velocity_scaling_factor(1)
+group.set_max_acceleration_scaling_factor(1)
+
 def detect_tf(data):
+    start = time.time()
     for m in data.transforms:
         id = m.fiducial_id
         trans = m.transform.translation
@@ -26,14 +30,14 @@ def detect_tf(data):
         pose_goal.position.y = round(trans.z / 3, 8)
         pose_goal.position.z = abs(round(trans.y / 3, 8)) + scale
 
-        print(pose_goal.position)
-
         group.set_pose_target(pose_goal)
 
         success = group.go(wait=True)
-        print("Does it work?", success)
+        print("Progress...", success)
 
-        group.clear_pose_targets()
+        # group.clear_pose_targets()
+        end = time.time()
+        print("Time:", end - start)
 
 
 def main():
@@ -47,5 +51,4 @@ if __name__ == '__main__':
         moveit_commander.roscpp_shutdown()
     except rospy.ROSInterruptException:
         print("Something went wrong!")
-
 
