@@ -189,7 +189,7 @@
   <parent link="shoulder__1"/>
   <child link="upper_arm__1"/>
   <axis xyz="0.01 -1.7e-05 0.0"/>
-  <limit effort="100" velocity="0.5" upper="2.27" lower="-2.27"/>
+  <limit effort="100" velocity="0.5" upper="1.57" lower="-1.57"/>
 </joint>
 <transmission name="joint1_tran">
   <type>transmission_interface/SimpleTransmission</type>
