@@ -115,7 +115,7 @@
   <visual>
     <origin rpy="0 0 0" xyz="-0.002217 0.074916 -0.576213"/>
     <geometry>
-      <mesh filename="package://we_r2_moveit_config/config/bin_stl/stl/wrist_link_2.stl"/>
+      <mesh filename="package://we_r2_moveit_config/config/bin_stl/wrist_2__1_m-binar/stl/wrist_link_2.stl"/>
     </geometry>
     <material name="silver">
       <color rgba="1 0 0 1"/>
@@ -137,7 +137,7 @@
   <visual>
     <origin rpy="0 0 0" xyz="-0.002069 0.043403 -0.602813"/>
     <geometry>
-      <mesh filename="package://we_r2_moveit_config/config/bin_stl/end_effector_link__1_m-binary.stl"/>
+      <mesh filename="package://we_r2_moveit_config/config/bin_stl/stl/gripper.stl"/>
     </geometry>
     <material name="silver">
       <color rgba="1 0 0 1"/>
