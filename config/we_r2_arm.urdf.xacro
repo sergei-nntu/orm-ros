@@ -135,9 +135,9 @@
     <inertia ixx="3e-06" ixy="-0.0" ixz="0.000809" iyy="1.2e-05" iyz="-0.000809" izz="1.2e-05"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.002069 0.043403 -0.602813"/>
+    <origin rpy="0 0 0" xyz="-0.114 0.043403 -0.59"/>
     <geometry>
-      <mesh filename="package://we_r2_moveit_config/config/bin_stl/end_effector_link__1_m-binary.stl"/>
+      <mesh filename="package://we_r2_moveit_config/config/bin_stl/stl/gripper.stl"/>
     </geometry>
     <material name="silver">
       <color rgba="1 0 0 1"/>
@@ -146,7 +146,8 @@
   <collision>
     <origin rpy="0 1.5708 0" xyz="-3.800000000000027e-05 0.007937999999999994 -1.8000000000073513e-05"/>
     <geometry>
-      <cylinder length="0.05" radius="0.02"/>
+      <!-- <cylinder length="0.05" radius="0.02"/> -->
+      <mesh filename="package://we_r2_moveit_config/config/col_stl/collision_gripper.stl"/>
     </geometry>
   </collision>
 </link>
