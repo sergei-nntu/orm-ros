@@ -4,7 +4,7 @@
   <visual>
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <geometry>
-      <mesh filename="package://we_r2_moveit_config/config/bin_stl/stl/base_link_9_11_1.stl"/>
+      <mesh filename="package://we_r2_moveit_config/config/bit_stl/base_link_9_11_1.stl"/>
     </geometry>
     <material name="silver">
       <color rgba="1 0 0 1"/>
@@ -27,7 +27,7 @@
   <visual>
     <origin rpy="0 0 0" xyz="0.035775 0.074529 -0.366958"/>
     <geometry>
-      <mesh filename="package://we_r2_moveit_config/config/bin_stl/stl/arm_2.stl"/>
+      <mesh filename="package://we_r2_moveit_config/config/bit_stl/arm_2.stl"/>
     </geometry>
     <material name="silver">
       <color rgba="1 0 0 1"/>
@@ -49,7 +49,7 @@
   <visual>
     <origin rpy="0 0 0" xyz="0.024453 0.074942 -0.544758"/>
     <geometry>
-      <mesh filename="package://we_r2_moveit_config/config/bin_stl/stl/wrist_link_1.stl"/>
+      <mesh filename="package://we_r2_moveit_config/config/bit_stl/wrist_link_1.stl"/>
     </geometry>
     <material name="silver">
       <color rgba="1 0 0 1"/>
@@ -71,7 +71,7 @@
   <visual>
     <origin rpy="0 0 0" xyz="-0.012324 0.074585 -0.163809"/>
     <geometry>
-      <mesh filename="package://we_r2_moveit_config/config/bin_stl/stl/arm_1.stl"/>
+      <mesh filename="package://we_r2_moveit_config/config/bit_stl/arm_1.stl"/>
     </geometry>
     <material name="silver">
       <color rgba="1 0 0 1"/>
@@ -93,7 +93,7 @@
   <visual>
     <origin rpy="0 0 0" xyz="-0.000666 0.07459 -0.106659"/>
     <geometry>
-      <mesh filename="package://we_r2_moveit_config/config/bin_stl/stl/shoulder_actuator_1.stl"/>
+      <mesh filename="package://we_r2_moveit_config/config/bit_stl/shoulder_actuator_1.stl"/>
     </geometry>
     <material name="silver">
       <color rgba="1 0 0 1"/>
@@ -115,7 +115,7 @@
   <visual>
     <origin rpy="0 0 0" xyz="-0.002217 0.074916 -0.576213"/>
     <geometry>
-      <mesh filename="package://we_r2_moveit_config/config/bin_stl/stl/wrist_link_2.stl"/>
+      <mesh filename="package://we_r2_moveit_config/config/bit_stl/wrist_link_2.stl"/>
     </geometry>
     <material name="silver">
       <color rgba="1 0 0 1"/>
@@ -137,7 +137,7 @@
   <visual>
     <origin rpy="0 0 0" xyz="-0.114 0.043403 -0.59"/>
     <geometry>
-      <mesh filename="package://we_r2_moveit_config/config/bin_stl/stl/gripper.stl"/>
+      <mesh filename="package://we_r2_moveit_config/config/bit_stl/gripper.stl"/>
     </geometry>
     <material name="silver">
       <color rgba="1 0 0 1"/>
