@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="https://www.ros.org/wiki/xacro" name="we_r2_arm">
+
+    <link name="world" />
+
+    <!-- TODO: links and joints -->
+
+</robot>

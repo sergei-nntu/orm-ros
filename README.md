@@ -1,5 +1,5 @@
 # orm-ros
-ROS Package for ORM-1 Open Robotic Manipulator
+ROS 2 Work space for ORM-1 Open Robotic Manipulator
 
 This project is a clone of the repository: 
 
