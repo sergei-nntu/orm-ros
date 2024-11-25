@@ -4,6 +4,20 @@
 
     <link name="world" />
 
-    <!-- TODO: links and joints -->
+    <link name="base_link">
+        <visual>
+            <origin rpy="0 0 0"  xyz="0 0 0" />
+            <geometry>
+                <mesh filename="package://we_r2_arm_description/meshes/shoulder_actuator_1.stl" scale="1 1 1" />
+            </geometry>
+        </visual>
+    </link>
+
+    <joint name="virtual_joint" type="fixed">
+        <parent link="world" />
+        <child link="base_link" />
+        <origin rpy="0 0 0" xyz="0 0 0" />
+    </joint>
+
 
 </robot>
