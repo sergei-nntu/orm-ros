@@ -62,6 +62,15 @@
     </visual>
   </link>
 
+  <link name="wrist_1">
+    <visual>
+      <origin rpy="0 0 0"  xyz="-0.035 0 -0.5655" />
+          <geometry>
+            <mesh filename="package://we_r2_arm_description/meshes/6.stl" scale="1 1 1" />
+          </geometry>
+    </visual>
+  </link>
+
   <joint name="virtual_joint" type="fixed">
     <parent link="world" />
     <child link="base_link" />
@@ -101,6 +110,14 @@
     <child link="arm_2" />
     <origin rpy="0 0 0" xyz="-0.062 0 0" />
     <axis xyz="1 0 0" />
+    <limit lower="-${PI/2}" upper="${PI/2}" effort="${effort}" velocity="${velocity}" />
+  </joint>
+
+  <joint name="joint_5" type="revolute">
+    <parent link="arm_2" />
+    <child link="wrist_1" />
+    <origin rpy="0 0 0" xyz="0 0 0.2125" />
+    <axis xyz="0 0 1" />
     <limit lower="-${PI/2}" upper="${PI/2}" effort="${effort}" velocity="${velocity}" />
   </joint>
 
