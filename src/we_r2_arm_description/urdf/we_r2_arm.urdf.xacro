@@ -111,19 +111,19 @@
     <limit lower="-${PI/2}" upper="${PI/2}" effort="${effort}" velocity="${velocity}" />
   </joint>
 
-  <joint name="joint_2" type="fixed">
+  <joint name="fix_s2_a1" type="fixed">
     <parent link="shoulder_2" />
     <child link="arm_1" />
     <origin rpy="0 0 0" xyz="0 0 0.115" />
   </joint>
 
-  <joint name="joint_3" type="fixed">
+  <joint name="fix_a1_s3" type="fixed">
     <parent link="arm_1" />
     <child link="shoulder_3" />
     <origin rpy="0 0 0" xyz="0 0 0.115" />
   </joint>
 
-  <joint name="joint_4" type="revolute">
+  <joint name="joint_2" type="revolute">
     <parent link="shoulder_3" />
     <child link="arm_2" />
     <origin rpy="0 0 0" xyz="-0.062 0 0" />
@@ -131,7 +131,7 @@
     <limit lower="-${PI/2}" upper="${PI/2}" effort="${effort}" velocity="${velocity}" />
   </joint>
 
-  <joint name="joint_5" type="revolute">
+  <joint name="joint_3" type="revolute">
     <parent link="arm_2" />
     <child link="wrist_1" />
     <origin rpy="0 0 0" xyz="0 0 0.2125" />
@@ -139,7 +139,7 @@
     <limit lower="-${PI/2}" upper="${PI/2}" effort="${effort}" velocity="${velocity}" />
   </joint>
 
-  <joint name="joint_6" type="revolute">
+  <joint name="joint_4" type="revolute">
     <parent link="wrist_1" />
     <child link="wrist_2" />
     <origin rpy="0 0 0" xyz="0.071 0 0" />
@@ -147,7 +147,7 @@
     <limit lower="-${PI/2}" upper="${PI/2}" effort="${effort}" velocity="${velocity}" />
   </joint>
 
-  <joint name="joint_7" type="revolute">
+  <joint name="joint_5" type="revolute">
     <parent link="wrist_2" />
     <child link="wrist_3" />
     <origin rpy="0 0 0" xyz="0 0 -0.07" />
