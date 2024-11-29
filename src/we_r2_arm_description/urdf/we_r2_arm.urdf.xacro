@@ -12,7 +12,7 @@
       <visual>
           <origin rpy="0 0 0"  xyz="0 0 0" />
           <geometry>
-            <mesh filename="package://we_r2_arm_description/meshes/basement.stl" scale="1 1 1" />
+            <mesh filename="package://we_r2_arm_description/meshes/_basement.stl" scale="1 1 1" />
           </geometry>
       </visual>
   </link>
@@ -21,7 +21,7 @@
     <visual>
       <origin rpy="0 0 0"  xyz="0 0 -0.09" />
           <geometry>
-            <mesh filename="package://we_r2_arm_description/meshes/1.stl" scale="1 1 1" />
+            <mesh filename="package://we_r2_arm_description/meshes/_shoulder_link_1.stl" scale="1 1 1" />
           </geometry>
     </visual>
   </link>
@@ -30,7 +30,7 @@
     <visual>
       <origin rpy="0 0 0"  xyz="-0.0975 0 -0.1225" />
           <geometry>
-            <mesh filename="package://we_r2_arm_description/meshes/2.stl" scale="1 1 1" />
+            <mesh filename="package://we_r2_arm_description/meshes/_shoulder_link_2.stl" scale="1 1 1" />
           </geometry>
     </visual>
   </link>
@@ -39,7 +39,7 @@
     <visual>
       <origin rpy="0 0 0"  xyz="-0.0975 0 -0.238" />
           <geometry>
-            <mesh filename="package://we_r2_arm_description/meshes/3.stl" scale="1 1 1" />
+            <mesh filename="package://we_r2_arm_description/meshes/_arm_link_1.stl" scale="1 1 1" />
           </geometry>
     </visual>
   </link>
@@ -48,7 +48,7 @@
     <visual>
       <origin rpy="0 0 0"  xyz="-0.0975 0 -0.353" />
           <geometry>
-            <mesh filename="package://we_r2_arm_description/meshes/4.stl" scale="1 1 1" />
+            <mesh filename="package://we_r2_arm_description/meshes/_shoulder_link_3.stl" scale="1 1 1" />
           </geometry>
     </visual>
   </link>
@@ -57,7 +57,7 @@
     <visual>
       <origin rpy="0 0 0"  xyz="-0.035 0 -0.353" />
           <geometry>
-            <mesh filename="package://we_r2_arm_description/meshes/5.stl" scale="1 1 1" />
+            <mesh filename="package://we_r2_arm_description/meshes/_arm_link_2.stl" scale="1 1 1" />
           </geometry>
     </visual>
   </link>
@@ -66,7 +66,7 @@
     <visual>
       <origin rpy="0 0 0"  xyz="-0.035 0 -0.5655" />
           <geometry>
-            <mesh filename="package://we_r2_arm_description/meshes/6.stl" scale="1 1 1" />
+            <mesh filename="package://we_r2_arm_description/meshes/_wrist_link_1.stl" scale="1 1 1" />
           </geometry>
     </visual>
   </link>
@@ -75,7 +75,7 @@
     <visual>
       <origin rpy="0 0 0"  xyz="-0.106 0 -0.5655" />
           <geometry>
-            <mesh filename="package://we_r2_arm_description/meshes/7.stl" scale="1 1 1" />
+            <mesh filename="package://we_r2_arm_description/meshes/_wrist_link_2.stl" scale="1 1 1" />
           </geometry>
     </visual>
   </link>
@@ -84,7 +84,7 @@
     <visual>
       <origin rpy="0 0 0"  xyz="-0.106 0 -0.4955" />
           <geometry>
-            <mesh filename="package://we_r2_arm_description/meshes/8.stl" scale="1 1 1" />
+            <mesh filename="package://we_r2_arm_description/meshes/_wrist_link_3.stl" scale="1 1 1" />
           </geometry>
     </visual>
   </link>
