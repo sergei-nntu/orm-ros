@@ -28,9 +28,27 @@
 
   <link name="shoulder_2">
     <visual>
-      <origin rpy="0 0 0"  xyz="0 0 -0.1225" />
+      <origin rpy="0 0 0"  xyz="-0.0925 0 -0.1225" />
           <geometry>
             <mesh filename="package://we_r2_arm_description/meshes/2.stl" scale="1 1 1" />
+          </geometry>
+    </visual>
+  </link>
+
+  <link name="arm_1">
+    <visual>
+      <origin rpy="0 0 0"  xyz="-0.0925 0 -0.238" />
+          <geometry>
+            <mesh filename="package://we_r2_arm_description/meshes/3.stl" scale="1 1 1" />
+          </geometry>
+    </visual>
+  </link>
+
+  <link name="shoulder_3">
+    <visual>
+      <origin rpy="0 0 0"  xyz="-0.0925 0 -0.353" />
+          <geometry>
+            <mesh filename="package://we_r2_arm_description/meshes/4.stl" scale="1 1 1" />
           </geometry>
     </visual>
   </link>
@@ -52,9 +70,21 @@
   <joint name="joint_1" type="revolute">
     <parent link="shoulder_1" />
     <child link="shoulder_2" />
-    <origin rpy="0 0 0" xyz="0 0 0.0375" />
+    <origin rpy="0 0 0" xyz="0.0925 0 0.0375" />
     <axis xyz="1 0 0" />
     <limit lower="-${PI/2}" upper="${PI/2}" effort="${effort}" velocity="${velocity}" />
+  </joint>
+
+  <joint name="joint_2" type="fixed">
+    <parent link="shoulder_2" />
+    <child link="arm_1" />
+    <origin rpy="0 0 0" xyz="0 0 0.115" />
+  </joint>
+
+  <joint name="joint_3" type="fixed">
+    <parent link="arm_1" />
+    <child link="shoulder_3" />
+    <origin rpy="0 0 0" xyz="0 0 0.115" />
   </joint>
 
 </robot>
