@@ -15,78 +15,132 @@
             <mesh filename="package://we_r2_arm_description/meshes/_basement.stl" scale="1 1 1" />
           </geometry>
       </visual>
+      <collision>
+          <origin rpy="0 0 0"  xyz="0 0 0" />
+          <geometry>
+            <mesh filename="package://we_r2_arm_description/meshes/_basement.stl" scale="1 1 1" />
+          </geometry>
+      </collision>
   </link>
 
   <link name="shoulder_1">
-    <visual>
-      <origin rpy="0 0 0"  xyz="0 0 -0.09" />
+      <visual>
+          <origin rpy="0 0 0"  xyz="0 0 -0.09" />
           <geometry>
             <mesh filename="package://we_r2_arm_description/meshes/_shoulder_link_1.stl" scale="1 1 1" />
           </geometry>
-    </visual>
+      </visual>
+      <collision>
+          <origin rpy="0 0 0"  xyz="0 0 -0.09" />
+          <geometry>
+            <mesh filename="package://we_r2_arm_description/meshes/_shoulder_link_1.stl" scale="1 1 1" />
+          </geometry>
+      </collision>
   </link>
 
   <link name="shoulder_2">
-    <visual>
-      <origin rpy="0 0 0"  xyz="-0.0975 0 -0.1225" />
+      <visual>
+          <origin rpy="0 0 0"  xyz="-0.0975 0 -0.1225" />
           <geometry>
             <mesh filename="package://we_r2_arm_description/meshes/_shoulder_link_2.stl" scale="1 1 1" />
           </geometry>
-    </visual>
+      </visual>
+      <collision>
+          <origin rpy="0 0 0"  xyz="-0.0975 0 -0.1225" />
+          <geometry>
+            <mesh filename="package://we_r2_arm_description/meshes/_shoulder_link_2.stl" scale="1 1 1" />
+          </geometry>
+      </collision>
   </link>
 
   <link name="arm_1">
-    <visual>
-      <origin rpy="0 0 0"  xyz="-0.0975 0 -0.238" />
+      <visual>
+          <origin rpy="0 0 0"  xyz="-0.0975 0 -0.238" />
           <geometry>
             <mesh filename="package://we_r2_arm_description/meshes/_arm_link_1.stl" scale="1 1 1" />
           </geometry>
-    </visual>
+      </visual>
+      <collision>
+          <origin rpy="0 0 0"  xyz="-0.0975 0 -0.238" />
+          <geometry>
+            <mesh filename="package://we_r2_arm_description/meshes/_arm_link_1.stl" scale="1 1 1" />
+          </geometry>
+      </collision>
   </link>
 
   <link name="shoulder_3">
-    <visual>
-      <origin rpy="0 0 0"  xyz="-0.0975 0 -0.353" />
+      <visual>
+          <origin rpy="0 0 0"  xyz="-0.0975 0 -0.353" />
           <geometry>
             <mesh filename="package://we_r2_arm_description/meshes/_shoulder_link_3.stl" scale="1 1 1" />
           </geometry>
-    </visual>
+      </visual>
+      <collision>
+          <origin rpy="0 0 0"  xyz="-0.0975 0 -0.353" />
+          <geometry>
+            <mesh filename="package://we_r2_arm_description/meshes/_shoulder_link_3.stl" scale="1 1 1" />
+          </geometry>
+      </collision>
   </link>
   
   <link name="arm_2">
-    <visual>
-      <origin rpy="0 0 0"  xyz="-0.035 0 -0.353" />
+      <visual>
+          <origin rpy="0 0 0"  xyz="-0.035 0 -0.353" />
           <geometry>
             <mesh filename="package://we_r2_arm_description/meshes/_arm_link_2.stl" scale="1 1 1" />
           </geometry>
-    </visual>
+      </visual>
+      <collision>
+          <origin rpy="0 0 0"  xyz="-0.035 0 -0.353" />
+          <geometry>
+            <mesh filename="package://we_r2_arm_description/meshes/_arm_link_2.stl" scale="1 1 1" />
+          </geometry>
+      </collision>
   </link>
 
   <link name="wrist_1">
-    <visual>
-      <origin rpy="0 0 0"  xyz="-0.035 0 -0.5655" />
+      <visual>
+          <origin rpy="0 0 0"  xyz="-0.035 0 -0.5655" />
           <geometry>
             <mesh filename="package://we_r2_arm_description/meshes/_wrist_link_1.stl" scale="1 1 1" />
           </geometry>
-    </visual>
+      </visual>
+      <collision>
+          <origin rpy="0 0 0"  xyz="-0.035 0 -0.5655" />
+          <geometry>
+            <mesh filename="package://we_r2_arm_description/meshes/_wrist_link_1.stl" scale="1 1 1" />
+          </geometry>
+      </collision>
   </link>
 
   <link name="wrist_2">
-    <visual>
-      <origin rpy="0 0 0"  xyz="-0.106 0 -0.5655" />
+      <visual>
+          <origin rpy="0 0 0"  xyz="-0.106 0 -0.5655" />
           <geometry>
             <mesh filename="package://we_r2_arm_description/meshes/_wrist_link_2.stl" scale="1 1 1" />
           </geometry>
-    </visual>
+      </visual>
+      <collision>
+          <origin rpy="0 0 0"  xyz="-0.106 0 -0.5655" />
+          <geometry>
+            <mesh filename="package://we_r2_arm_description/meshes/_wrist_link_2.stl" scale="1 1 1" />
+          </geometry>
+      </collision>
   </link>
 
   <link name="wrist_3">
-    <visual>
-      <origin rpy="0 0 0"  xyz="-0.106 0 -0.4955" />
+      <visual>
+          <origin rpy="0 0 0"  xyz="-0.106 0 -0.4955" />
           <geometry>
             <mesh filename="package://we_r2_arm_description/meshes/_wrist_link_3.stl" scale="1 1 1" />
           </geometry>
-    </visual>
+      </visual>
+      <collision>
+          <origin rpy="0 0 0"  xyz="-0.106 0 -0.4955" />
+          <geometry>
+            <mesh filename="package://we_r2_arm_description/meshes/_wrist_link_3.stl" scale="1 1 1" />
+          </geometry>
+      </collision>
   </link>
 
   <joint name="virtual_joint" type="fixed">
