@@ -16,7 +16,15 @@
   <link name="world" />
 
   <link name="base_link">
-      <xacro:set_inertial_properties mass="5.4" ixx="0.02" iyy="0.02" izz="0.02" ixy="0.0" ixz="0.0" iyz="0.0" />
+      <xacro:set_inertial_properties
+          mass="0.05874091537805123"
+          ixx="5.069325238399438e-07"
+          iyy="5.03261588382805e-07"
+          izz="5.158001766408783e-07"
+          ixy="-1.3599049738200289e-09"
+          ixz="1.9255511143901896e-09"
+          iyz="6.1684253463568775e-09"
+      />
       <visual>
           <origin rpy="0 0 0"  xyz="0 0 0" />
           <geometry>
@@ -32,7 +40,15 @@
   </link>
 
   <link name="shoulder_1">
-      <xacro:set_inertial_properties mass="5.4" ixx="0.02" iyy="0.02" izz="0.02" ixy="0.0" ixz="0.0" iyz="0.0" />
+      <xacro:set_inertial_properties
+          mass="0.050440858970288605"
+          ixx="3.005183597940359e-07"
+          iyy="3.665709425699336e-07"
+          izz="4.5028455515505477e-07"
+          ixy="1.0649030502704232e-09"
+          ixz="2.370610535651304e-09"
+          iyz="-9.071841796611485e-10"
+      />
       <visual>
           <origin rpy="0 0 0"  xyz="0 0 -0.09" />
           <geometry>
@@ -48,7 +64,15 @@
   </link>
 
   <link name="shoulder_2">
-      <xacro:set_inertial_properties mass="5.4" ixx="0.02" iyy="0.02" izz="0.02" ixy="0.0" ixz="0.0" iyz="0.0" />
+      <xacro:set_inertial_properties
+          mass="0.05044085414191668"
+          ixx="4.502844630735536e-07"
+          iyy="3.6657085213457464e-07"
+          izz="3.005183382087688e-07"
+          ixy="9.071905295793651e-10"
+          ixz="2.3706236393239754e-09"
+          iyz="-1.0649012523437004e-09"
+      />
       <visual>
           <origin rpy="0 0 0"  xyz="-0.0975 0 -0.1225" />
           <geometry>
@@ -64,7 +88,15 @@
   </link>
 
   <link name="arm_1">
-      <xacro:set_inertial_properties mass="5.4" ixx="0.02" iyy="0.02" izz="0.02" ixy="0.0" ixz="0.0" iyz="0.0" />
+      <xacro:set_inertial_properties
+          mass="0.044251539903695285"
+          ixx="2.833874020580755e-07"
+          iyy="2.833258274191603e-07"
+          izz="1.9052628724712893e-07"
+          ixy="1.3487381142351982e-14"
+          ixz="5.884981629615538e-16"
+          iyz="2.3436730073522664e-17"
+      />
       <visual>
           <origin rpy="0 0 0"  xyz="-0.0975 0 -0.238" />
           <geometry>
@@ -80,7 +112,15 @@
   </link>
 
   <link name="shoulder_3">
-      <xacro:set_inertial_properties mass="5.4" ixx="0.02" iyy="0.02" izz="0.02" ixy="0.0" ixz="0.0" iyz="0.0" />
+      <xacro:set_inertial_properties
+          mass="0.05044085983898365"
+          ixx="4.502845675706768e-07"
+          iyy="3.665709415609793e-07"
+          izz="3.0051837728746137e-07"
+          ixy="-9.071835190421403e-10"
+          ixz="-2.3706345343237994e-09"
+          iyz="-1.0649051839252498e-09"
+      />
       <visual>
           <origin rpy="0 0 0"  xyz="-0.0975 0 -0.353" />
           <geometry>
@@ -96,7 +136,15 @@
   </link>
   
   <link name="arm_2">
-      <xacro:set_inertial_properties mass="5.4" ixx="0.02" iyy="0.02" izz="0.02" ixy="0.0" ixz="0.0" iyz="0.0" />
+      <xacro:set_inertial_properties
+          mass="0.08229208019566814"
+          ixx="1.678957345472814e-06"
+          iyy="1.632909784625322e-06"
+          izz="2.1123582338289025e-07"
+          ixy="4.583013547232283e-13"
+          ixz="2.2158063208723737e-08"
+          iyz="1.0493909202851985e-13"
+      />
       <visual>
           <origin rpy="0 0 0"  xyz="-0.035 0 -0.353" />
           <geometry>
@@ -112,7 +160,15 @@
   </link>
 
   <link name="wrist_1">
-      <xacro:set_inertial_properties mass="5.4" ixx="0.02" iyy="0.02" izz="0.02" ixy="0.0" ixz="0.0" iyz="0.0" />
+      <xacro:set_inertial_properties
+          mass="0.01744961820593269"
+          ixx="6.472771584401692e-08"
+          iyy="6.787870269568325e-08"
+          izz="6.333182770195471e-08"
+          ixy="3.693845099465346e-13"
+          ixz="5.207805454941194e-10"
+          iyz="-1.551144695708266e-13"
+      />
       <visual>
           <origin rpy="0 0 0"  xyz="-0.035 0 -0.5655" />
           <geometry>
@@ -128,7 +184,15 @@
   </link>
 
   <link name="wrist_2">
-      <xacro:set_inertial_properties mass="5.4" ixx="0.02" iyy="0.02" izz="0.02" ixy="0.0" ixz="0.0" iyz="0.0" />
+      <xacro:set_inertial_properties
+          mass="0.017449620410967932"
+          ixx="6.333171184749314e-08"
+          iyy="6.787858868275478e-08"
+          izz="6.472773235335568e-08"
+          ixy="-1.59077259124802e-13"
+          ixz="-5.207743466715363e-10"
+          iyz="-3.776145400480582e-13"
+      />
       <visual>
           <origin rpy="0 0 0"  xyz="-0.106 0 -0.5655" />
           <geometry>
@@ -144,7 +208,15 @@
   </link>
 
   <link name="wrist_3">
-      <xacro:set_inertial_properties mass="5.4" ixx="0.02" iyy="0.02" izz="0.02" ixy="0.0" ixz="0.0" iyz="0.0" />
+      <xacro:set_inertial_properties
+          mass="0.017449626820649593"
+          ixx="6.787863512163427e-08"
+          iyy="6.47277754345737e-08"
+          izz="6.333173256672455e-08"
+          ixy="3.7785813324560766e-13"
+          ixz="1.5917586378074193e-13"
+          iyz="-5.207755084890318e-10"
+      />
       <visual>
           <origin rpy="0 0 0"  xyz="-0.106 0 -0.4955" />
           <geometry>
