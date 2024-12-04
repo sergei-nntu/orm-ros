@@ -6,6 +6,9 @@
   <xacro:property name="effort" value="100.0" />
   <xacro:property name="velocity" value="0.5" />
 
+  <xacro:include filename="$(find we_r2_arm_description)/urdf/we_r2_arm_gazebo.xacro" />
+  <xacro:include filename="$(find we_r2_arm_description)/urdf/we_r2_arm_ros2_control.xacro" />
+
   <xacro:macro name="set_inertial_properties" params="mass ixx iyy izz ixy ixz iyz">
       <inertial>
           <mass value="${mass}" />
