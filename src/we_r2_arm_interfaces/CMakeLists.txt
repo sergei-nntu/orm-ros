@@ -13,6 +13,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/Example.srv"
   "srv/EulerToQuaternion.srv"
   "srv/QuaternionToEuler.srv"
+  "action/Example.action"
 )
 
 ament_export_dependencies(rosidl_default_runtime)
