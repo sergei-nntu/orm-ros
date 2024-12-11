@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot name="we_r2_arm">
+    <group name="arm">
+        <joint name="virtual_joint"/>
+        <joint name="joint_0"/>
+        <joint name="joint_1"/>
+        <joint name="fix_s2_a1"/>
+        <joint name="fix_a1_s3"/>
+        <joint name="joint_2"/>
+        <joint name="fix_a2_w1"/>
+        <joint name="joint_3"/>
+    </group>
+
+    <group name="gripper">
+        <joint name="joint_4"/>
+    </group>
+
+    <group_state name="home" group="arm">
+        <joint name="joint_0" value="0"/>
+        <joint name="joint_1" value="0"/>
+        <joint name="joint_2" value="0"/>
+        <joint name="joint_3" value="0"/>
+    </group_state>
+
+    <group_state name="home" group="gripper">
+        <joint name="joint_4" value="0"/>
+    </group_state>
+
+    <disable_collisions link1="base_link" link2="base_plate" reason="Adjacent"/>
+    <disable_collisions link1="base_link" link2="shoulder_1" reason="Adjacent links, no collision expected"/>
+    <disable_collisions link1="shoulder_1" link2="shoulder_2" reason="Adjacent links, no collision expected"/>
+    <disable_collisions link1="shoulder_2" link2="arm_1" reason="Adjacent links, no collision expected"/>
+    <disable_collisions link1="arm_1" link2="shoulder_3" reason="Adjacent links, no collision expected"/>
+    <disable_collisions link1="shoulder_3" link2="arm_2" reason="Adjacent links, no collision expected"/>
+    <disable_collisions link1="arm_2" link2="wrist_1" reason="Adjacent links, no collision expected"/>
+    <disable_collisions link1="wrist_1" link2="wrist_2" reason="Adjacent links, no collision expected"/>
+    <disable_collisions link1="wrist_2" link2="wrist_3" reason="Adjacent links, no collision expected"/>
+</robot>
