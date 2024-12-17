@@ -1,4 +1,4 @@
-# !/usr/bin/env python3
+#!/usr/bin/env python3
 import rclpy
 import numpy as np
 from rclpy.logging import get_logger
@@ -28,10 +28,10 @@ class ArmController():
 
     def execute(self):
         if self._arm_plan_result:
-            get_logger("rclpy").info("Planner SUCCEED, moving the arm...")
+            get_logger("arm_controller").info("Planner SUCCEED, moving the arm...")
             self._moveit_instance.execute(self._arm_plan_result.trajectory, controllers=[])
         else:
-            get_logger("rclpy").error("The arm planner failed!")
+            get_logger("arm_controller").error("The arm planner failed!")
 
     def set_joints_state(self, joint_positions):
         joints_state_validation(joint_positions, 4)
@@ -58,7 +58,6 @@ if __name__ == "__main__":
         arm_controller.set_joints_state([1.17, 0.0, 0.0, 0.14])
         arm_controller.plan_and_execute()
 
-        logger.info('SUCCEED')
     except KeyboardInterrupt:
         logger.info("Application interrupted by user.")
     except Exception as e:

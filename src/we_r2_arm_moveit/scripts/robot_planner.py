@@ -1,6 +1,6 @@
 from moveit.planning import MoveItPy
 
-    
+
 class RobotPlanner():
     _we_r2_arm = None
 

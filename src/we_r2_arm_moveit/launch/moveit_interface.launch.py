@@ -22,7 +22,7 @@ def generate_launch_description():
 
     simple_moveit_interface = Node(
         package="we_r2_arm_moveit",
-        executable="moveit_interface.py",
+        executable="arm_controller.py",
         parameters=[moveit_config.to_dict(),
                     {"use_sim_time": True}]
     )
