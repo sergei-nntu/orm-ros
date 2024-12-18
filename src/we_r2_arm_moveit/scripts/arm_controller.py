@@ -36,7 +36,7 @@ class ArmController():
     def set_joints_state(self, joint_positions):
         joints_state_validation(joint_positions, 4)
 
-        self._arm_state.set_joint_group_positions("arm", np.array(joint_positions))
+        self._arm_state.set_joint_group_positions("arm", joint_positions)
 
         self._arm.set_start_state_to_current_state()
         self._arm.set_goal_state(robot_state=self._arm_state)

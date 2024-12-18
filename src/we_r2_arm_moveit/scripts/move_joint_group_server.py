@@ -4,11 +4,20 @@ from rclpy.node import Node
 from rclpy.action import ActionServer
 from rclpy.logging import get_logger
 from we_r2_arm_interfaces.action import MoveJointGroup
+from arm_controller import ArmController
+from gripper_controller import GripperController
+from robot_planner import RobotPlanner
 
 
 class MoveJointGroupServer(Node):
+    _planner = None
+    _controller = None
+    _moveit_planner = None
+
     def __init__(self):
         super().__init__('move_joint_group_server')
+        self._planner = RobotPlanner()
+        self._moveit_planner = self._planner.get_moveit_planner()
         self._action_server = ActionServer(
             self,
             MoveJointGroup,
@@ -18,26 +27,38 @@ class MoveJointGroupServer(Node):
 
     async def execute_callback(self, goal_handle):
         self.get_logger().info('Executing goal...')
-        
-        feedback_msg = MoveJointGroup.Feedback()
 
         result = MoveJointGroup.Result()
+        # feedback_msg = MoveJointGroup.Feedback()
 
         joints_position = goal_handle.request.joints_position
         joint_position_group = goal_handle.request.joint_position_group
 
-        self.get_logger().info(f'Feedback: {joints_position} {joint_position_group}')
+        self.set_controller_based_on_group(joint_position_group)
 
-        feedback_msg.current_position = [0, 0, 0, 0]
-        feedback_msg.finished = True
-        feedback_msg.in_progress = False
-        goal_handle.publish_feedback(feedback_msg)
+        if not self._controller:
+            result.success = False
+            result.message = f"Error, the {joint_position_group} wasn't recognized"
+            goal_handle.abort()
+
+            return result
+
+        self._controller.set_joints_state(joints_position)
+        self._controller.plan_and_execute()
 
         result.success = True
-        result.message = "Hello, world!"
+        result.message = "The goal was executed successfully!"
         goal_handle.succeed()
 
         return result
+    
+    def set_controller_based_on_group(self, joint_position_group):
+        if joint_position_group == 'arm':
+            self._controller = ArmController(self._moveit_planner)
+        elif joint_position_group == 'gripper':
+            self._controller = GripperController(self._moveit_planner)
+        else:
+            self._controller = None
 
 
 if __name__ == '__main__':

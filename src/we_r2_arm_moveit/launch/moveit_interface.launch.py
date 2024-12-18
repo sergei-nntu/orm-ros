@@ -20,13 +20,13 @@ def generate_launch_description():
         .to_moveit_configs()
     )
 
-    simple_moveit_interface = Node(
+    move_joint_group_server = Node(
         package="we_r2_arm_moveit",
-        executable="arm_controller.py",
+        executable="move_joint_group_server.py",
         parameters=[moveit_config.to_dict(),
                     {"use_sim_time": True}]
     )
     
     return LaunchDescription([
-        simple_moveit_interface,
+        move_joint_group_server,
     ])

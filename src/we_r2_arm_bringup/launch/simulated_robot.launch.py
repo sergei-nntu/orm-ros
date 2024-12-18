@@ -28,10 +28,20 @@ def generate_launch_description():
             os.path.join(
                 get_package_share_directory("we_r2_arm_moveit"),
                 "launch",
-                "moveit.launch.py"
+                "moveit_interface.launch.py"
             ),
             launch_arguments={"is_sim": "True"}.items()
         )
+
+    # TODO: this
+    # moveit_rviz = IncludeLaunchDescription(
+    #         os.path.join(
+    #             get_package_share_directory("we_r2_arm_moveit"),
+    #             "launch",
+    #             "moveit.launch.py"
+    #         ),
+    #         launch_arguments={"is_sim": "True"}.items()
+    #     )
 
     launch.add_action(gazebo)
     launch.add_action(controller)
