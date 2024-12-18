@@ -16,6 +16,7 @@ install(
 install(
   PROGRAMS
     scripts/arm_controller.py
+    scripts/gripper_controller.py
     scripts/robot_planner.py
     scripts/utils.py
   DESTINATION lib/${PROJECT_NAME}
