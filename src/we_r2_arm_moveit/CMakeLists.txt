@@ -19,6 +19,7 @@ install(
     scripts/gripper_controller.py
     scripts/robot_planner.py
     scripts/utils.py
+    scripts/move_joint_group_server.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

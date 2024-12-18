@@ -14,6 +14,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/EulerToQuaternion.srv"
   "srv/QuaternionToEuler.srv"
   "action/Example.action"
+  "action/MoveJointGroup.action"
 )
 
 ament_export_dependencies(rosidl_default_runtime)
