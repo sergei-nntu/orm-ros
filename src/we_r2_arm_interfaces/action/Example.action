@@ -1,0 +1,12 @@
+# Goal definition
+int32 order
+
+---
+
+# Result definition
+float64 result
+
+---
+
+# Feedback definition
+string status

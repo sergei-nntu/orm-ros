@@ -1,0 +1,15 @@
+# Goal definition
+float64[] joints_position
+string joint_position_group
+
+---
+
+# Result definition
+bool success
+string message
+---
+
+# Feedback definition
+float64[] current_position
+bool in_progress
+bool finished
