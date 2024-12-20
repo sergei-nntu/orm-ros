@@ -65,7 +65,7 @@ class MoveJointGroupServer(Node):
 
 if __name__ == '__main__':
     rclpy.init()
-    
+
     logger = get_logger("move_joint_group_server")
 
     node = None
@@ -85,4 +85,3 @@ if __name__ == '__main__':
             node.destroy_node()
 
         rclpy.shutdown()
-    

@@ -14,9 +14,9 @@ class GripperController(Controller):
 
 if __name__ == "__main__":
     rclpy.init()
-    
+
     logger = get_logger("gripper_controller")
-    
+
     try:
 
         logger.info('Starting gripper controller...')

@@ -14,9 +14,9 @@ class ArmController(Controller):
 
 if __name__ == "__main__":
     rclpy.init()
-    
+
     logger = get_logger("arm_controller")
-    
+
     try:
 
         logger.info('Starting arm controller...')
