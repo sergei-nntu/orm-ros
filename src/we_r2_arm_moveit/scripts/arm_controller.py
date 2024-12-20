@@ -8,8 +8,7 @@ from controller import Controller
 
 class ArmController(Controller):
     def __init__(self, moveit_planner):
-        super().__init__(moveit_planner, 'arm')
-        self.set_number_of_joints(4)
+        super().__init__(moveit_planner, 'arm', 4)
 
 
 if __name__ == "__main__":

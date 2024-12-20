@@ -8,8 +8,7 @@ from controller import Controller
 
 class GripperController(Controller):
     def __init__(self, moveit_planner):
-        super().__init__(moveit_planner, 'gripper')
-        self.set_number_of_joints(2)
+        super().__init__(moveit_planner, 'gripper', 2)
 
 
 if __name__ == "__main__":

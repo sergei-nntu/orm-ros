@@ -6,8 +6,8 @@ from utils import joints_state_validation
 
 
 class Controller():
-    def __init__(self, moveit_planner, controller_name):
-        self._number_of_joints = 0 
+    def __init__(self, moveit_planner, controller_name, number_of_joints):
+        self._number_of_joints = number_of_joints
         self._moveit_instance = moveit_planner
         self._controller_name = controller_name
         self._entity = moveit_planner.get_planning_component(controller_name)
@@ -36,6 +36,3 @@ class Controller():
 
         self._entity.set_start_state_to_current_state()
         self._entity.set_goal_state(robot_state=self._entity_state)
-
-    def set_number_of_joints(self, value):
-        self._number_of_joints = value
