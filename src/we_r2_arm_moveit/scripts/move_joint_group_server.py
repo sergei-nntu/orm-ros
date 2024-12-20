@@ -16,6 +16,8 @@ class MoveJointGroupServer(Node):
 
     def __init__(self):
         super().__init__('move_joint_group_server')
+        self.get_logger().info('Initializing MoveJointGroupServer...')
+
         self._planner = RobotPlanner()
         self._moveit_planner = self._planner.get_moveit_planner()
         self._action_server = ActionServer(
