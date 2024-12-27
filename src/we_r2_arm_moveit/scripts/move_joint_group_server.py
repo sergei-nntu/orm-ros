@@ -79,7 +79,7 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
         logger.info("Application interrupted by user.")
     except Exception as e:
-        logger.error('Arm controller failed...', e)
+        logger.error(f'Arm controller failed: {e}')
     finally:
         if node is not None:
             node.destroy_node()
