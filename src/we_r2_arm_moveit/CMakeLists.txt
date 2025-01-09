@@ -15,6 +15,7 @@ install(
 
 install(
   PROGRAMS
+    scripts/controller.py
     scripts/arm_controller.py
     scripts/gripper_controller.py
     scripts/robot_planner.py

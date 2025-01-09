@@ -16,6 +16,8 @@ class MoveJointGroupServer(Node):
 
     def __init__(self):
         super().__init__('move_joint_group_server')
+        self.get_logger().info('Initializing MoveJointGroupServer...')
+
         self._planner = RobotPlanner()
         self._moveit_planner = self._planner.get_moveit_planner()
         self._action_server = ActionServer(
@@ -63,7 +65,7 @@ class MoveJointGroupServer(Node):
 
 if __name__ == '__main__':
     rclpy.init()
-    
+
     logger = get_logger("move_joint_group_server")
 
     node = None
@@ -77,10 +79,9 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
         logger.info("Application interrupted by user.")
     except Exception as e:
-        logger.error('Arm controller failed...', e)
+        logger.error(f'Arm controller failed: {e}')
     finally:
         if node is not None:
             node.destroy_node()
 
         rclpy.shutdown()
-    
